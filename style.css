@@ -262,6 +262,12 @@ section#contact{
         display: flex;
     }
 }
+@media(max-width: 600px) {
+    .navbar a.active{
+        display: none;
+    }
+}
+
 @media(min-width: 600px) {
     .toggle-button{
         display: none;
