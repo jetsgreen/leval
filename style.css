@@ -56,6 +56,15 @@ body {
 .navbar ul li a:hover {
     color: skyblue;
 }
+.felix {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    margin-left: 10px;
+}
+.brand-title {
+    margin-left: inherit;
+}
 
 .section{
     display: flex;
@@ -196,4 +205,39 @@ section#contact{
 .portfolio-btn:hover{
     background: rgba(0,0,0.5,0.8);
     color: white;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media(max-width: 600px){
+    .toggle-button{
+        display: flex;
+    }
+    .navbar ul li a{
+        display: none;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+@media(min-width: 600px){
+    .toggle-button{
+        display: none;
+    }
 }
