@@ -258,3 +258,8 @@ section#contact{
         display: flex;
     }
 }
+@media(min-width: 600px) {
+    .toggle-button{
+        display: none;
+    }
+}
